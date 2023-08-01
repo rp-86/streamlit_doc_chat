@@ -82,9 +82,9 @@ if clear_button:
 
 
 # generate a response
-def generate_response(prompt, tokens, data):
-    if data:
-        prompt = f'Answer question: {prompt} from context: {data}'
+def generate_response(prompt, tokens, doc):
+    if doc:
+        prompt = f'Answer question: {prompt} from context: {doc}'
     st.session_state['messages'].append({"role": "user", "content": prompt})
 
     completion = openai.ChatCompletion.create(
