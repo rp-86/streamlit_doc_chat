@@ -1,6 +1,6 @@
 import openai
 import streamlit as st
-from config import config
+from config import config, key
 from streamlit_chat import message
 import numpy as np
 import pandas as pd
@@ -11,7 +11,7 @@ import streamlit.components.v1 as components
 st.set_page_config(page_title="DocQA")
 
 # Set org ID and API key
-openai.api_key = "<OPENAI-KEY>"
+openai.api_key = key
 
 # Initialise session state variables
 if 'generated' not in st.session_state:
