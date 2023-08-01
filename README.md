@@ -1,6 +1,6 @@
 # DocQA: A Streamlit Application for Document Querying using OpenAI
 
-[Conversion](./gif/git2.gif)
+![Conversion](./gif/git2.gif)
 
 
 ## Pre-requisites
